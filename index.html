@@ -225,18 +225,37 @@
           </div>
         </div>
 
+
+
+            
+
         <div class="row mt">
-          <div class="col-lg-8 col-lg-offset-2 centered">
-          <p>イベントに参加して入部を決められた方は、このフォームから入部登録を行ってください。</p>
-          <p>活動名：ふじみ野農園部<br>部費：1,000円／月（カード決済）</p>
-          </div>
-          <form class="col-lg-12"  role="form" action="http://green.pne.jp/opAuthMailAddress/requestRegisterURL" method="POST">
-            <input type="hidden" name="request_register_url[course_id]" value="1">
-            <div class="input-group input-group-lg col-sm-offset-4 col-sm-4">
-              <input type="text" name="request_register_url[mail_address]"  class="center-block form-control input-lg" title="Enter you email." placeholder="メールアドレスを入力して下さい">
-              <span class="input-group-btn"><button type="submit" class="btn btn-lg btn-primary" type="button">送信</button></span>
+          <div class="col-md-8 col-md-offset-2 entrysheet">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h1 class="text-center">入部届</h1>
+                        <p class="text-center h3">私は農園部に入部することを希望します。</p>
+                        <p class="text-center h3">
+                            農園部                            <br>
+                            活動費：1000円／月（カード決済）
+                            <br>定期活動：月1回ふじみ野ログハウス</p>
+
+                        <form class="form-horizontal" role="form" action="http://green.pne.jp/opAuthMailAddress/requestRegisterURL" method="POST">
+                            <input type="hidden" name="request_register_url[course_id]" value="1">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-md-4 control-label">メールアドレス</label>
+                                <div class="col-md-7">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="request_register_url[mail_address]"></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-1 col-md-10">
+                                    <button type="submit" class="btn btn-lg btn-warning btn-block">入部申し込みする</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </form>
         </div>
 
         <div class="row mt">
